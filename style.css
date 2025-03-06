@@ -236,7 +236,7 @@
   
 .button {
   unicode-bidi: isolate;
-  cursor: pointer                                ;
+  cursor: pointer;                                ;
 }
 
   .head .document {
@@ -295,8 +295,13 @@
     font-size: 20px;
     align-items: center;
     font-weight: bold;
+
   }
 
+
+  .popular .may {
+   margin-top: 1230px
+ }
 
 
   .highlight {
@@ -336,50 +341,48 @@
     margin-top: 55px;
   }
   
-  .popular .item {
+  .popular .ye {
     flex: 1;
     border-radius: 12px;
-    background-color: #fff;
-    border: 1px solid #e2dfda;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
   }
   
-.popular .item .head {
+.popular .ye .head {
 
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
-  height: 100px;
+  height: 1px;
   
 }
 
 
 
-  .popular .item:hover {
+  .popular .ye:hover {
     border: 1px solid transparent;
     border-radius: 12px;
     background-color: #fff;
-    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 18px 36px 0 rgba(191, 9, 9, 0.05);
   }
   
   .popular .list .thumb {
-    border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 12px 12px;
     width: 100%;
     height: 278px;
-    /* Để ảnh không bị méo */
     object-fit: cover;
   }
   
   .popular .item .info {
     display: flex;
-    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
-    align-items: center; /* Căn giữa các phần tử */
-    justify-content: left; /* Căn giữa theo chiều dọc */
-    border: 2px solid #000;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
     padding: 20px;
     width: 300px;
-    height: 400px; /* Đặt chiều cao của container */
-    margin-top: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
-    text-align: left; /* Căn giữa văn bản */
+    height: 400px; 
+    margin-top: 10px; 
+    text-align: left; 
 
 
   }
@@ -433,15 +436,12 @@
     background: var(--primary-color);
   }
 
-
-  .introduction {
-    padding: 96px 0;
-    margin-top: 135px;
-    background-color: #d29e1a;
-  }
   
   .introduction .item {
     display: flex;
+    margin-top: 20%;
+    background: #473d2c;
+  
   }
   
   .introduction .item .avatar {
@@ -451,20 +451,32 @@
     object-fit: cover;
   }
   
+ .introduction .content .h2 {
+  color: #d6bf8a;
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+
+ }
+
+
+
+
   .item .info .name {
     margin-top: 18px;
-    color: #f7f7f7;
+    color: #997d3f;
     font-family: var(--font-heading);
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.42;
   }
   
-  .item .info .desc {
-    margin-top: 4px;
-    color: #bfbcb2;
-    font-size: 1.4rem;
-    line-height: 1.86;
+  .desc {
+    
+    color: #9a7e36;
+    font-size: 16px;
+    margin-top: 10px;
+
   }
   
   .item .dots {
@@ -481,6 +493,18 @@
     cursor: pointer;
   }
   
+
+.nut .button {
+  width: 160px;
+    background-color: var(--primary-color);
+    line-height: 60px;
+    color: #342020;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 35px;
+    text-align: center;
+}
+
   .item .dot.active {
     background: var(--primary-color);
     cursor: default;
@@ -489,12 +513,14 @@
   .item .content {
     width: 66%;
     margin-left: auto;
+    font-size: 24px;
+    transform: translateY(80px);
+ 
   }
   
-  .foreword {
-    color: #f1b3b3;
-    font-size: 2.6rem;
-    font-style: italic;
-    line-height: 1.54;
-  }
-    
+ .head1 .h3 .rating {
+  display: flex;
+  line-height: 1.9;
+  margin-bottom: 5px
+ }
+
