@@ -62,10 +62,10 @@
   }
   
   .header {
-    background-color: #fffcf4;
     position: sticky;
     top: -28px;
     z-index: 99;
+    background: #fffcf4;
   }
   
   .header.fixed {
@@ -123,11 +123,14 @@
     max-width: calc(100% - 48px);
     margin-right: auto;
     margin-left: auto;
+    position: relative;
+    top: 50px;    /* Di chuyển 50px từ vị trí ban đầu theo chiều dọc (lên xuống) */
+    left: 30px;
   }
   
   .head {
-    padding: 56px 0px 65px;
-    background: #fffcf4;
+    margin: -20px;
+   
   }
   
   .head .body {
@@ -139,6 +142,7 @@
     height: 68.5rem;
     object-fit: cover;
     border-radius: 20px;
+    
   }
   
 
@@ -383,7 +387,7 @@
   .popular .course-item .head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .popular .course-item .title a {
