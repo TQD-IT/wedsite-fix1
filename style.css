@@ -299,11 +299,6 @@
   }
 
 
-  .popular .may {
-   margin-top: 1230px
- }
-
-
   .highlight {
     color: #ffbc2c;
     font-size: 45px;
@@ -334,6 +329,23 @@
     gap: 18px;
   }
   
+  .top .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  .top .button:hover {
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+  }
   
   .popular .list {
     display: flex;
@@ -341,62 +353,40 @@
     margin-top: 55px;
   }
   
-  .popular .ye {
+  .popular .course-item {
     flex: 1;
     border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  
+    background-color: #fff;
+    border: 1px solid #e2dfda;
   }
   
-.popular .ye .head {
-
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  height: 1px;
-  
-}
-
-
-
-  .popular .ye:hover {
+  .popular .course-item:hover {
     border: 1px solid transparent;
     border-radius: 12px;
     background-color: #fff;
-    box-shadow: 0 18px 36px 0 rgba(191, 9, 9, 0.05);
+    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
   }
   
   .popular .list .thumb {
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 0 0;
     width: 100%;
     height: 278px;
     object-fit: cover;
   }
   
-  .popular .item .info {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    padding: 20px;
-    width: 300px;
-    height: 400px; 
-    margin-top: 10px; 
-    text-align: left; 
-
-
+  .popular .course-item .info {
+    padding: 16px 22px 22px;
   }
-
   
-  .popular .item .foot,
-  .popular .item .rating,
-  .popular .item .head {
+  .popular .course-item .foot,
+  .popular .course-item .rating,
+  .popular .course-item .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .popular .item .title  {
+  .popular .course-item .title a {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -410,73 +400,65 @@
     line-height: 1.75;
   }
   
-  .popular .item .desc {
-    margin-top: 7px;
+  .popular .course-item .desc {
+    margin-top: 6px;
     color: #5f5b53;
     font-size: 1.4rem;
     line-height: 1.86;
   }
   
-  .popular .item .foot {
+  .popular .course-item .foot {
     margin-top: 12px;
   }
   
-  .popular .item .price {
+  .popular .course-item .price {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
   }
   
-  .popular .item .book {
+  .popular .course-item .btn-book {
     border: none;
   }
   
-  .popular .item .book:hover {
+  .popular .course-item .btn-book:hover {
     background: var(--primary-color);
   }
 
-  
-  .introduction .item {
-    display: flex;
-    margin-top: 20%;
-    background: #473d2c;
-  
+
+
+  .feedback {
+    padding: 96px 0;
+    margin-top: 135px;
+    background: #2e2100;
   }
   
-  .introduction .item .avatar {
+  .feedback .item {
+    display: flex;
+  }
+  
+  .feedback .item .avatar {
     width: 72px;
     height: 72px;
     border-radius: 50%;
     object-fit: cover;
   }
   
- .introduction .content .h2 {
-  color: #d6bf8a;
-  font-size: 35px;
-  font-style: italic;
-  text-align: center;
-
- }
-
-
-
-
-  .item .info .name {
+  .item .info .member-name {
     margin-top: 18px;
-    color: #997d3f;
+    color: #f7f7f7;
     font-family: var(--font-heading);
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.42;
   }
   
-  .desc {
-    
-    color: #9a7e36;
-    font-size: 16px;
-    margin-top: 10px;
-
+  .item .info .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86;
   }
   
   .item .dots {
@@ -493,18 +475,6 @@
     cursor: pointer;
   }
   
-
-.nut .button {
-  width: 160px;
-    background-color: var(--primary-color);
-    line-height: 60px;
-    color: #342020;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 35px;
-    text-align: center;
-}
-
   .item .dot.active {
     background: var(--primary-color);
     cursor: default;
@@ -513,14 +483,22 @@
   .item .content {
     width: 66%;
     margin-left: auto;
-    font-size: 24px;
-    transform: translateY(80px);
- 
   }
   
- .head1 .h3 .rating {
-  display: flex;
-  line-height: 1.9;
-  margin-bottom: 5px
- }
+  .item h2 {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54;
+  }
+  
 
+
+
+
+
+
+
+
+ 
+  
