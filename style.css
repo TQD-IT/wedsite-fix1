@@ -487,6 +487,7 @@
   .item .content {
     width: 66%;
     margin-left: auto;
+    top: auto;
   }
   
   .item h2 {
