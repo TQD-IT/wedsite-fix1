@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
   }
   
   ul {
@@ -18,8 +19,12 @@
   body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    overflow-x: hidden; 
   }
-  
+
   a {
     text-decoration: none;
   }
@@ -238,10 +243,10 @@
   }
   
   
-.button {
+ .button {
   unicode-bidi: isolate;
   cursor: pointer;                                ;
-}
+ }
 
   .head .document {
     margin-top: 22px;
@@ -382,12 +387,21 @@
     padding: 16px 22px 22px;
   }
   
-  .popular .course-item .foot,
   .popular .course-item .rating,
   .popular .course-item .head {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: left;
+    transform: translateX(-15px);
+  }
+
+
+  .popular .course-item .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
   }
   
   .popular .course-item .title a {
@@ -498,8 +512,224 @@
   }
   
 
+  .container_1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 400px;
+    
+}
+
+/* Style cho phần hình ảnh */
+.images_1 {
+    display: flex;
+    gap: 100px;
+    
+}
+
+.images_1 img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: -400px;
+}
 
 
+
+ .images_2 img {
+ width: 300px;
+ height: 450px;
+ object-fit: cover;
+ border-radius: 20px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ position: relative;
+ left: -400px;
+ margin-top: -100px;
+}
+
+
+.content_1 {
+    max-width: 400px;
+    text-align: left;
+    transform: translateX(-200px)
+    
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.report_1 {
+    font-size: 12px;
+    color: #888;
+}
+
+.sign-up {
+  background: orange;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 16px;
+  min-width: 118px;
+  line-height: 5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  gap: 50px;
+}
+
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.text-content p {
+  margin: 30px 0;
+  color: gray;
+  font-size: 18px;
+}
+
+.join {
+  background: orange;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 16px;
+  min-width: 118px;
+  line-height: 5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+
+.image-content img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+
+.blog-section {
+  text-align: center;
+  background-color: #fffcf6;
+  padding: 50px;
+}
+
+.blog-section h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.blog-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.blog-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.date {
+  color: #a5895e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+
+.blog-content h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+.blog-content hr {
+  margin-left: 8px;
+  
+}
+
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
 
 
 
