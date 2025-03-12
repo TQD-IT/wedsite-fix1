@@ -16,6 +16,11 @@
     font-size: 62.5%;
   }
   
+
+  html, body {
+  overflow-x: hidden;
+  }
+
   body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
