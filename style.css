@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
   }
   
   ul {
@@ -17,9 +18,7 @@
   }
   
 
-  html, body {
-  overflow-x: hidden;
-  }
+
 
   body {
     font-size: 1.6rem;
