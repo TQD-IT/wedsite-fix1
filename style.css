@@ -19,10 +19,12 @@
   body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
-    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
   }
 
   a {
@@ -135,6 +137,7 @@
   
   .head {
     margin: -20px;
+    background: #fffcf4;
    
   }
   
@@ -147,6 +150,8 @@
     height: 68.5rem;
     object-fit: cover;
     border-radius: 20px;
+    display: block;
+    margin: 60px auto 0;
     
   }
   
@@ -388,14 +393,17 @@
   }
   
   .popular .course-item .rating,
-  .popular .course-item .head {
+  .popular .course-item .head-1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: left;
     transform: translateX(-15px);
   }
-
+  
+  .head-1 {
+    margin: -20px;
+  }
 
   .popular .course-item .foot {
     display: flex;
@@ -520,42 +528,42 @@
     
 }
 
-/* Style cho phần hình ảnh */
-.images_1 {
-    display: flex;
-    gap: 100px;
-    
-}
-
-.images_1 img {
-    width: 300px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    left: -400px;
+.feedback_1 {
+  margin-top: 135px;
+  padding: 65px;
 }
 
 
+.feedback_1 .body {
+  display: flex;
+  justify-content: space-between;
+}
 
- .images_2 img {
- width: 300px;
- height: 450px;
- object-fit: cover;
- border-radius: 20px;
- box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
- position: relative;
- left: -400px;
- margin-top: -100px;
+.feedback_1 .imgase {
+  display: flex;
+  gap: 30px;
+  transform: translateX(-20px);
+}
+
+ 
+
+.feedback_1 .imgase img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 
-.content_1 {
-    max-width: 400px;
-    text-align: left;
-    transform: translateX(-200px)
-    
+.feedback_1 .lower {
+  margin-top: 34px;
+}
+
+.feedback_1 .container_1 {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h2 {
@@ -733,7 +741,82 @@ button:hover {
 
 
 
+.site-footer {
+  background: #2e2100;
+  padding: 96px 135px 0;
+}
+
+.site-footer .container {
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+
+.site-footer .container .column {
+  width: 21.6%;
+}
+
+.site-footer .container .column:first-child {
+  width: 35%;
+}
 
 
+
+
+.site-footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.site-footer .social-icon {
+  display: flex;
+  margin-top: 18px;
+  gap: 18px;
+}
+
+.site-footer .title {
+  display: inline-block;
+  padding-right: 48px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.site-footer .list {
+  margin-top: 28px;
+}
+
+.site-footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.site-footer .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.site-footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+}
+
+.site-footer .footer-bottom {
+  padding: 28px 0;
+  color: #807b74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
  
   
