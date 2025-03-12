@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
   }
   
   ul {
@@ -17,7 +16,9 @@
     font-size: 62.5%;
   }
   
-
+  html, body {
+    overflow-x: hidden;
+  }
 
 
   body {
